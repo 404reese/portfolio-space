@@ -10,13 +10,7 @@ const Navbar = () => {
           href="#about-me"
           className="h-auto w-auto flex flex-row items-center"
         >
-          <Image
-            src="/astro.png"
-            alt="logo"
-            width={40}
-            height={40}
-            className="cursor-pointer hover:animate-slowspin rounded-full"
-          />
+          
 
           <span className="font-bold ml-[10px] hidden md:block text-white">
             Riddhesh Chaudhary
@@ -24,18 +18,18 @@ const Navbar = () => {
         </a>
 
         <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
-          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
-            <a href="#about-me" className="cursor-pointer">
-              About me
-            </a>
-            <a href="#skills" className="cursor-pointer">
-              Skills
-            </a>
-            <a href="#projects" className="cursor-pointer">
-              Projects
-            </a>
-          </div>
-        </div>
+  <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
+    <a href="#about-me" className="cursor-pointer text-sm">
+      About
+    </a>
+    <a href="#skills" className="cursor-pointer text-sm">
+      Skills
+    </a>
+    <a href="#projects" className="cursor-pointer text-sm">
+      Projects
+    </a>
+  </div>
+</div>
 
         <div className="flex flex-row gap-5">
   {Socials.map((social) => (
@@ -45,6 +39,7 @@ const Navbar = () => {
         alt={social.name}
         width={24}
         height={24}
+        className="object-cover w-6 h-6 min-w-[24px] min-h-[24px]"
       />
     </a>
   ))}
